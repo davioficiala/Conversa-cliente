@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mensagens Cliente Obra</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+.box {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: #25D366;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2 {
+    margin: 0 0 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📲 Mensagens para Cliente</h1>
+
+<div class="box">
+<h2>Início</h2>
+<p id="inicio">Olá, tudo bem? 👋  
+Vi que você precisa de serviço de obra.  
+
+Trabalho com construção, reformas, blindex e estrutura metálica.  
+Posso te ajudar 👍  
+
+Você já tem as medidas ou quer que eu vá até o local ver certinho?  
+
+Faço tudo organizado, com material certo e entrega no prazo.</p>
+<button onclick="copiar('inicio')">Copiar</button>
+</div>
+
+<div class="box">
+<h2>Valor</h2>
+<p id="valor">Olhei seu serviço e consigo fazer completo pra você 👍  
+
+Incluindo material + mão de obra + instalação.  
+
+O valor fica em R$ XXXX.</p>
+<button onclick="copiar('valor')">Copiar</button>
+</div>
+
+<div class="box">
+<h2>Pagamento</h2>
+<p id="pagamento">Pra iniciar, trabalho com entrada de 30% a 50% 👍  
+
+O restante combinamos durante a execução e finalização.</p>
+<button onclick="copiar('pagamento')">Copiar</button>
+</div>
+
+<div class="box">
+<h2>Contrato</h2>
+<p id="contrato">Faço um contrato simples 👍  
+
+Com valor, prazo e forma de pagamento, tudo organizado pra ficar seguro pra nós dois.</p>
+<button onclick="copiar('contrato')">Copiar</button>
+</div>
+
+<script>
+function copiar(id) {
+    var texto = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(texto);
+    alert("Mensagem copiada!");
+}
+</script>
+
+</body>
+</html>
