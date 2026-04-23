@@ -1,87 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Mensagens Cliente Obra</title>
+<title>Roteiro WhatsApp Obras</title>
 <style>
-body {
-    font-family: Arial;
-    background: #f4f4f4;
-    padding: 20px;
-}
-.box {
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-button {
-    margin-top: 10px;
-    padding: 8px;
-    border: none;
-    background: #25D366;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-}
-h2 {
-    margin: 0 0 10px;
-}
+body { font-family: Arial; background: #111; color: #fff; padding: 20px; }
+.box { background: #1e1e1e; padding: 15px; margin-bottom: 15px; border-radius: 10px; }
+h3 { color: #00ff88; }
+code { color: #00ff88; display: block; margin-top: 10px; }
 </style>
 </head>
-
 <body>
 
-<h1>📲 Mensagens para Cliente</h1>
-
 <div class="box">
-<h2>Início</h2>
-<p id="inicio">Olá, tudo bem? 👋  
-Vi que você precisa de serviço de obra.  
-
-Trabalho com construção, reformas, blindex e estrutura metálica.  
-Posso te ajudar 👍  
-
-Você já tem as medidas ou quer que eu vá até o local ver certinho?  
-
-Faço tudo organizado, com material certo e entrega no prazo.</p>
-<button onclick="copiar('inicio')">Copiar</button>
+<h3>1. Primeiro contato</h3>
+<code>
+Boa tarde, tudo bem?  
+Aqui é o Davi, trabalho com obras e reformas.  
+Me fala o que você precisa fazer?
+</code>
 </div>
 
 <div class="box">
-<h2>Valor</h2>
-<p id="valor">Olhei seu serviço e consigo fazer completo pra você 👍  
-
-Incluindo material + mão de obra + instalação.  
-
-O valor fica em R$ XXXX.</p>
-<button onclick="copiar('valor')">Copiar</button>
+<h3>2. Puxar informação</h3>
+<code>
+Perfeito.  
+Consegue me mandar foto ou vídeo do local?  
+Assim consigo te passar algo mais certo.
+</code>
 </div>
 
 <div class="box">
-<h2>Pagamento</h2>
-<p id="pagamento">Pra iniciar, trabalho com entrada de 30% a 50% 👍  
-
-O restante combinamos durante a execução e finalização.</p>
-<button onclick="copiar('pagamento')">Copiar</button>
+<h3>3. Mostrar autoridade</h3>
+<code>
+Faço esse tipo de serviço com foco em qualidade e prazo certinho.  
+Prefiro entender bem antes pra te passar um valor justo.
+</code>
 </div>
 
 <div class="box">
-<h2>Contrato</h2>
-<p id="contrato">Faço um contrato simples 👍  
+<h3>4. Enviar orçamento</h3>
+<code>
+Segue o valor da mão de obra:
 
-Com valor, prazo e forma de pagamento, tudo organizado pra ficar seguro pra nós dois.</p>
-<button onclick="copiar('contrato')">Copiar</button>
+Serviço: ______  
+✔ Execução completa  
+✔ Acabamento  
+✔ Limpeza final  
+
+Valor: R$ ______  
+
+Qualquer dúvida me chama.
+</code>
 </div>
 
-<script>
-function copiar(id) {
-    var texto = document.getElementById(id).innerText;
-    navigator.clipboard.writeText(texto);
-    alert("Mensagem copiada!");
-}
-</script>
+<div class="box">
+<h3>5. Criar leve urgência</h3>
+<code>
+Esse valor consigo manter por alguns dias por causa da agenda.
+</code>
+</div>
+
+<div class="box">
+<h3>6. Cliente sumiu</h3>
+<code>
+Bom dia, tudo bem?  
+Conseguiu analisar o orçamento?
+</code>
+</div>
+
+<div class="box">
+<h3>7. Cliente fala "mês que vem"</h3>
+<code>
+Tranquilo.  
+No começo do mês te chamo pra alinhar e ver a agenda.
+</code>
+</div>
+
+<div class="box">
+<h3>8. Retorno início do mês</h3>
+<code>
+Bom dia!  
+Você comentou de iniciar agora no começo do mês.  
+Se quiser, já posso reservar sua data.
+</code>
+</div>
+
+<div class="box">
+<h3>9. Fechamento</h3>
+<code>
+Perfeito.  
+Consigo te encaixar dia ___.  
+Se confirmar hoje, já deixo reservado pra você.
+</code>
+</div>
 
 </body>
 </html>
